@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infosys Ingenious Campus Ambassador Program - CHARAN CHENGAPPA P S</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .nav-link {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #00ffff;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #00ffff;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f2ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background-color: #003366;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #003366;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Infosys Ingenious Campus Ambassador Program</h1>
+    <p>Presented by CHARAN CHENGAPPA P S, XIME</p>
+    <div style="margin-top: 30px;"></div>
+    <nav style="background-color: #003366; padding: 15px 0; text-align: center; position: sticky; top: 8; z-index: 100;">
+  <a href="#skills & Strengths" class="nav-link">Skills</a>
+  <a href="#recommendations" class="nav-link">Recommendations</a>
+  <a href="#leadership" class="nav-link">Leadership</a>
+  <a href="#campaignplan" class="nav-link">My Campaign Plan</a>
+  <a href="#resume" class="nav-link">Resume</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</nav>
+  </header>
+
+  <div class="container">
+    <!-- 📷 Profile Photo Section -->
+<section style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px;">
+  <!-- Profile Image -->
+  <img src="myphoto.jpg" alt="My Profile Photo"
+    style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; border: 4px solid #0077cc; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+    onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px rgba(0, 123, 255, 0.5)'"
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+
+  <!-- Text Info -->
+  <div>
+    <h2 style="color: #003366; margin-bottom: 10px;">Hi, I'm CHARAN CHENGAPPA P S</h2>
+    <p style="max-width: 400px;">
+      A passionate learner, leader, and tech enthusiast.<br>
+      Aspiring to bridge innovation and impact through collaboration and community.
+    </p>
+  </div>
+</section>
+
+
+<!-- 🧠 Skills Section -->
+<section id="skills & Strengths" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>Skills & Strengths</h2>
+    <ul style="list-style-type: circle; margin-left: 20px; line-height: 1.8;">
+        <li style="margin-bottom: 12px;">As Section A CR, I am approachable, attentive, and dependable</li>
+        <li style="margin-bottom: 12px;">Confident communicator, comfortable speaking to groups and engaging with peers</li>
+        <li style="margin-bottom: 12px;">Experienced in organizing events and building strong student networks</li>
+        <li style="margin-bottom: 12px;">Enjoy finding creative solutions and driving new ideas</li>
+        <li style="margin-bottom: 12px;">Adaptable, quick to learn, and able to handle multiple tasks</li>
+        <li style="margin-bottom: 12px;">Comfortable in Excel, SQL, and Python</li>
+    </ul>
+</section>
+<script>
+    // Show Skills section only when scrolled into view
+    const slideSection = document.querySelector('.slide-in-section');
+    function handleSlideIn() {
+        const rect = slideSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+            slideSection.style.opacity = '1';
+            slideSection.style.transform = 'translateX(0)';
+            window.removeEventListener('scroll', handleSlideIn);
+        }
+    }
+    window.addEventListener('scroll', handleSlideIn);
+</script>
+
+<!-- 💬 Recommendations Section -->
+<section id="recommendations" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>Recommendations</h2>
+    <blockquote style="font-style: italic; color: #555; margin: 10px 0;">
+        “A highly proactive and organized student leader with a passion for tech outreach.” – Dr Raju, Dean Finance, XIME
+    </blockquote>
+    <blockquote style="font-style: italic; color: #555; margin: 10px 0;">
+        “Charan has the ability to bring energy and focus to any initiative.” – Ashvin Tyagi, Classmate, XIME
+    </blockquote>
+</section>
+
+<section id="leadership" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>Leadership-Why I Want to Be an Ambassador</h2>
+    <p>
+        I genuinely love bringing people together and inspiring others to grow. As a Campus Ambassador, I hope to connect Infosys and XIME by sharing opportunities, encouraging teamwork, and helping everyone feel included and motivated to innovate.
+    </p>
+</section>
+
+<section id="campaignplan" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>My Campaign Plan</h2>
+    <p>
+        I will host Infosys-themed events, info sessions, quizzes, and actively promote digital skilling programs. My focus will be to build a vibrant community built on values of Infosys at XIME.
+        <br><br><strong>My Focus Areas Include:</strong>
+        <br><br>
+        <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
+                <ul style="margin-left: 20px; line-height: 2; flex: 1 1 300px; min-width: 250px;">
+                    <img src="Campaign plan.png" alt="Campaign Plan" style="float: right; width: 180px; border-radius: 12px; margin-left: 30px; margin-top: -40px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);" />
+                        <li style="margin-bottom: 12px;"><strong>Awareness & Engagement:</strong> Regular Infosys-themed events, sessions, and activities</li>
+                        <li style="margin-bottom: 12px;"><strong>Upskilling:</strong> Promoting Infosys digital learning platforms like Springboard, InfyTQ</li>
+                        <li style="margin-bottom: 12px;"><strong>Community Building:</strong> Foster integrity and collaboration among students</li>
+                        <li style="margin-bottom: 12px;"><strong>Brand Representation:</strong> Be the Infosys point of contact for students at XIME</li>
+                </ul>
+        </div>
+    </p>
+    </section>
+
+<section id="resume" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>My Resume</h2>
+    <a href="https://drive.google.com/file/d/1TvYXg3z_xtpDcpMgej1eIyFU7WY04sot/view?usp=drive_link" target="_blank" rel="noopener" class="cta-button">Download Resume</a>
+</section>
+
+<section id="contact" class="slide-in-section" style="opacity:0; transform:translateX(-80px); transition:opacity 1.5s ease, transform 1.5s cubic-bezier(.68,-0.55,.27,1.55);">
+    <h2>Contact Me</h2>
+    <p>
+        📧 Email: charanpattada@gmail.com <br />
+        📱 Phone: +91-9448701351 <br />
+        📍 Campus: XIME Bangalore
+    </p>
+</section>
+
+<!-- 🔝 Scroll to Top Button -->
+<button id="scrollToTopBtn" style="
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.3s, transform 0.3s;
+" title="Go to top" aria-label="Scroll to top">↑</button>
+<script>
+    // Slide-in animation for all sections
+    function slideInSections() {
+        document.querySelectorAll('.slide-in-section').forEach(function(section) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80 && section.style.opacity !== '1') {
+                section.style.opacity = '1';
+                section.style.transform = 'translateX(0)';
+            }
+        });
+    }
+    window.addEventListener('scroll', slideInSections);
+    window.addEventListener('DOMContentLoaded', slideInSections);
+
+    // Scroll to top button
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', function() {
+        scrollBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+  <footer>
+    © 2025 CHARAN • Infosys Ambassador | XIME
+  </footer>
+
+</body>
+</html>
